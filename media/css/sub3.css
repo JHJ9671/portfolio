@@ -1,0 +1,124 @@
+/* 와이드 pc  */
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+}
+
+.down{display: block; width: 100px; height: 100px; position: absolute; 
+	 left:50%; margin-left: -50px; bottom: 5%;
+	animation:ani 1s infinite  alternate;}
+@keyframes ani {
+      0% { transform:translateY(0px) scale(0.1); opacity:0; color:#3DBFF2;}
+      100% { transform:translateY(20px) scale(1); opacity:1; color:#fff;}
+}
+#content{ width:100%; margin:0 ; background:rgba(5, 6, 38, .95);position: relative;}
+/* @keyframes subtit {
+   0%{letter-spacing: 6rem; opacity: 0; text-shadow: 0 0 20px rgba(0,0,0,0); transform: rotate(-360deg);}
+   100%{letter-spacing: 0.5rem; opacity: 1; text-shadow: 0 0 20px rgba(255,255,255,.6);transform: rotate(0deg);}
+} */
+@keyframes subtit {
+    0%{left: -100%; opacity: 0; text-shadow: 0 0 20px rgba(0,0,0,0); transform: rotate(-720deg);}
+    100%{left: 0; opacity: 1; text-shadow: 0 0 20px rgba(255,255,255,.6);transform: rotate(0deg);}
+ }
+#content h2{position: absolute; top: -500px; transition: all .5s; width: auto; text-align: center; font-size: 5em; color: #fff; display: flex; left: 50%; transform: translate(-50%); text-indent: 2px;}
+#content h2 span {position: relative; display: block;}
+#content h2 span:nth-of-type(1){ animation: subtit forwards .4s ease-in-out;}
+#content h2 span:nth-of-type(2){ animation: subtit forwards .6s ease-in-out;}
+#content h2 span:nth-of-type(3){ animation: subtit forwards .8s ease-in-out;}
+#content h2 span:nth-of-type(4){ animation: subtit forwards 1s ease-in-out;}
+#content h2 span:nth-of-type(5){ animation: subtit forwards 1.2s ease-in-out;}
+#content h2 span:nth-of-type(6){ animation: subtit forwards 1.4s ease-in-out;}
+#content h2 span:nth-of-type(7){ animation: subtit forwards 1.6s ease-in-out;}
+#content h2 span:nth-of-type(8){ animation: subtit forwards 1.8s ease-in-out;}
+#content h2 span:nth-of-type(9){ animation: subtit forwards 2.2s ease-in-out;}
+#content .highlight {width: 94%; margin: 0 auto; padding: 150px 0; position: relative;}
+#content .highlight .highlight_top {position: relative; width: 100%; margin-bottom: 30px;}
+#content .highlight .highlight_top h3 {display: inline-block; font-size: 3.89rem;background: linear-gradient(to right, #D705F2, #3DBFF2); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+#content .highlight .highlight_top p {width: 50%;}
+#content .highlight ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#content .highlight ul li {transition: all .5s; width: 48%; margin: 0 1%;}
+#content .highlight ul li:hover a img{transform: scale(1.05);}
+#content .highlight ul li:hover a::after {background-size: 80% auto;}
+#content .highlight ul li:hover a {overflow: hidden;
+    box-sizing: border-box;
+    border: 4px solid transparent;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), linear-gradient(to right bottom, #D705F2, #3DBFF2);
+    background-origin: border-box;
+    background-clip: content-box, border-box;}
+#content .highlight ul li:hover {width: 46%; margin: 2%;}
+#content .highlight ul li a {position: relative; border: 4px solid transparent; transition: background .5s; overflow: hidden;}
+#content .highlight ul li a::after {content: "";display: block;width: 120px; height: 85px; background: url(../images/youtube_logo.png) no-repeat center; background-size: 60% auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); transition: all .5s;}
+#content .highlight ul li img {width: 100%;height: 100%; object-fit: cover; object-position: center;transition: all .5s;mix-blend-mode:screen;}
+#content .highlight ul li:nth-of-type(2){margin-top: -10%;}
+#content .highlight ul li:nth-of-type(4){margin-top: -7.5rem;}
+#content .highlight ul li dl {padding: 20px 3%;}
+#content .highlight ul li dt {font-size: 1.5rem; font-family: 'Anton',Anton;}
+#content .highlight ul li dd p {margin: 2% 0;}
+/* interview */
+#content .interview {position: relative; padding: 100px 0;}
+#content .interview h3 {display: inline-block; font-size: 3.89rem;background: linear-gradient(to right, #D705F2, #3DBFF2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; position: absolute; left: 50%; top: -50px; transform: translate(-50%);}
+#content .interview ul {display: flex; width: 94%; margin: 0 3%; justify-content: space-between;}
+#content .interview ul li {width: 100%; margin-right: 1.5%;}
+#content .interview ul li:last-of-type {margin-right: 0;}
+#content .interview ul li img {width: 100%; height: 100%; object-fit: cover; object-position: center; transition: all .5s;}
+#content .interview ul li a {position: relative; border: 4px solid transparent; transition: background .5s; overflow: hidden;}
+#content .interview ul li a::after {content: "";display: block;width: 120px; height: 85px; background: url(../images/youtube_logo.png) no-repeat center; background-size: 60% auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); transition: all .5s;}
+#content .interview ul li:hover a img{transform: scale(1.05);}
+#content .interview ul li:hover a::after {background-size: 80% auto;}
+#content .interview ul li dt {margin: 3% 0; font-size: 1.5rem; font-family: 'Anton',Anton;}
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+ #content .highlight .highlight_top h3 {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);}
+        #content .highlight .highlight_top p {width: auto; text-align: center;}
+#content .highlight ul li:nth-of-type(2){margin-top:0%;}
+#content .highlight ul li:nth-of-type(4){margin-top:0%;}
+#content .highlight ul li:nth-of-type(2):hover,#content .highlight ul li:nth-of-type(4):hover{margin-top:2%;}
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    #content .highlight {padding: 60px 0;}
+    #content h2 {font-size: 4rem;}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    #content h2 {font-size: 3.5rem;}
+    #content .highlight {width: auto;}
+    #content .highlight .highlight_top p {width: 94%; margin: 0 3%;}
+    #content .highlight .highlight_top h3 {font-size: 2.89rem;}
+    #content .highlight ul {
+        flex-direction: column;
+    }
+    #content .highlight ul li {width: auto; margin: 0;}
+    #content .highlight ul li:hover {width: auto; margin: 0;}
+    #content .highlight ul li:nth-of-type(1):hover,#content .highlight ul li:nth-of-type(2):hover,#content .highlight ul li:nth-of-type(3):hover,#content .highlight ul li:nth-of-type(4):hover{margin:0;}
+    #content .highlight ul li:hover a::after {background-size: 70% auto;}
+    #content .interview {padding: 30px 0 60px;}
+    #content .interview h3 {font-size: 2.89rem;}
+    #content .interview ul {flex-direction: column; width: auto; margin: 0;}
+    #content .interview ul li {margin: 3% 0;}
+    #content .interview ul li dl {width: 94%; margin: 0 3%;}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  
+}
