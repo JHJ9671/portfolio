@@ -1,0 +1,44 @@
+.head_office {width: 1200px; margin: 120px auto;}
+.head_office h3 {position: relative; font-size: 2em; font-weight: 500; margin-left: 30px;}
+.head_office h3::before {content: ""; display: block; width: 8px; height: 6px; background: #f00; transform: skew(-30deg); position: absolute; left: -22px; top: 22px;}
+.head_office h3 span {font-size: 1.125rem;}
+.head_office p {margin: 30px 0 70px; font-size: 1.125em;}
+.head_office h4 {position: relative; font-size: 1.35em; font-weight: 400; margin-left: 30px;}
+.head_office h4::before {content: ""; display: block; width: 8px; height: 6px; background: #f00; transform: skew(-30deg); position: absolute; left: -22px; top: 15px;}
+.head_office dl {padding: 30px 0;}
+.head_office ul {overflow: hidden; width: 1200px; padding: 50px 0;}
+.head_office ul li {width: 200px; height: 200px; float: left; border-radius: 50%; background: #1c1c1c; margin: 0 20px; position: relative;}
+.head_office ul li::before {content: ""; display: block; width: 24px; height: 24px; background: url(../images/content3/arrow.png) center no-repeat; position: absolute; right: -32px; top: 90px;}
+.head_office ul li:last-child::before {display: none;}
+.head_office ul li img {margin: 30px 0 0 40px;}
+.head_office ul li span {position: relative; display: block; color: #fff; text-align: center; margin: 20px 0 0; font-size: 1.125em; z-index: 1;}
+.head_office ul li span::after {content: ""; width: 100px; height: 30px;background: #f00; display: block; transform: skew(-30deg); position: absolute; left: 50px; top: 0px; z-index: -1;}
+
+.consultant {width: 1200px; margin: 120px auto;}
+.consultant h3 {position: relative; font-size: 2em; font-weight: 500; margin-left: 30px;}
+.consultant h3::before {content: ""; display: block; width: 8px; height: 6px; background: #f00; transform: skew(-30deg); position: absolute; left: -22px; top: 22px;}
+.consultant h3 span {font-size: 1.125rem;}
+.consultant p {margin: 30px 0 70px; font-size: 1.125em;}
+.consultant p a {display: inline; transition: all .3s;}
+.consultant p a:hover {color: #f00;}
+.consultant h4 {position: relative; font-size: 1.35em; font-weight: 400; margin-left: 30px;}
+.consultant h4::before {content: ""; display: block; width: 8px; height: 6px; background: #f00; transform: skew(-30deg); position: absolute; left: -22px; top: 15px;}
+.consultant dl {padding: 30px 0;}
+.consultant ul {overflow: hidden; width: 1200px; padding: 50px 0;}
+.consultant ul li {width: 200px; height: 200px; float: left; border-radius: 50%; background: #1c1c1c; margin: 0 20px; position: relative;}
+.consultant ul li::before {content: ""; display: block; width: 24px; height: 24px; background: url(../images/content3/arrow.png) center no-repeat; position: absolute; right: -32px; top: 90px;}
+.consultant ul li:last-child::before {display: none;}
+.consultant ul li img {margin: 30px 0 0 40px;}
+.consultant ul li span {position: relative; display: block; color: #fff; text-align: center; margin: 20px 0 0; font-size: 1.125em; z-index: 1;}
+.consultant ul li span::after {content: ""; width: 100px; height: 30px;background: #f00; display: block; transform: skew(-30deg); position: absolute; left: 50px; top: 0px; z-index: -1;}
+.consultant table {width: 1200px; margin: 50px 0; border-collapse: collapse;}
+.consultant table thead th {background: #666; font-size: 1.125em; padding: 15px; border: 2px solid #ccc; color: #fff;}
+.consultant table tbody td {padding: 15px; color: #fff; border: 2px solid #ccc; background: #1c1c1c; text-align: center;}
+
+.place_of_work {width: 1200px; margin: 120px auto;}
+.place_of_work h3 {position: relative; font-size: 2em; font-weight: 500; margin-left: 30px;}
+.place_of_work h3::before {content: ""; display: block; width: 8px; height: 6px; background: #f00; transform: skew(-30deg); position: absolute; left: -22px; top: 22px;}
+.place_of_work table {width: 1200px; margin: 50px 0; border-collapse: collapse;}
+.place_of_work table thead th {background: #666; font-size: 1.125em; padding: 15px; border: 2px solid #ccc; color: #fff;}
+.place_of_work table tbody td {padding: 15px; color: #fff; border: 2px solid #ccc; background: #1c1c1c; text-align: center;}
+

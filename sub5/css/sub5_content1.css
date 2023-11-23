@@ -1,0 +1,13 @@
+.content_area p {font-size: 2.5em; font-weight: 500; text-align: center;
+line-height: 2em; margin: 200px auto;}
+.talent li {position: relative; height: 500px; margin: 200px 0 400px;;}
+.talent li img {border-radius: 30px;}
+.talent li:nth-child(1) img, .talent li:nth-child(3) img {position: absolute; left: 50%; top: 0; width: 1200px; height: 600px; margin-left: -1100px;}
+.talent li:nth-child(2) img, .talent li:nth-child(4) img {position: absolute; right: 50%; top: 0; width: 1200px; height: 600px; margin-right: -1100px;}
+.talent li:nth-child(1) dl, .talent li:nth-child(3) dl {position: absolute; left: 50%; top: 60%; width: 600px; height: 350px; background: #fff; box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .15); margin-left: -100px;}
+.talent li:nth-child(2) dl, .talent li:nth-child(4) dl {position: absolute; right: 50%; top: 60%; width: 600px; height: 350px; background: #fff; box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .15); margin-right: -100px;}
+.talent dl {padding: 0 50px;}
+.talent dl dt {position: relative; font-size: 1.5em; font-weight: 500; color: #f00; margin: 50px 0 70px;}
+.talent dl dt::before {content: ""; display: block; width: 450px; height: 4px; background: #f00; position: absolute; left: 0; top: 65px;}
+.talent dl dd {position: relative; text-align: justify; font-size: 1.125em; margin: 40px 0; margin-left: 20px;}
+.talent dl dd::before {content: ""; display: block; position: absolute; left: -20px; top: 14px; width: 6px; height: 4px; transform: skew(-30deg); background: #f00;}

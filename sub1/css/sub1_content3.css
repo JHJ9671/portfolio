@@ -1,0 +1,10 @@
+.content_area {margin: 70px 0 300px;}
+.content_area .tabs {overflow: hidden; width: 1200px; margin: 0 auto 30px; border-bottom: 1px solid #ccc;}
+.content_area .tabs li {width: 25%; float: left;}
+.content_area .tabs .tab:hover, .content_area .tabs .tab.current {background: #f00; color: #fff;}
+.content_area .tab {padding: 10px; text-align: center; font-size: 1.250em; color: #333; font-weight: 500; transition: all .5s;}
+.content_area .map {height: 850px; overflow: hidden;}
+.content_area .maps #base, #gwanghwamun, #bundang, #junggu {width: 1200px; height: 600px; margin: 0 auto; border: 1px solid #ccc;}
+.content_area section address {font-size: 1.125em; width: 1200px; font-weight: 400; text-align: justify; position: relative; left: 50%; top: 0; margin-left:-600px;}
+.content_area section address p {padding: 15px;}
+.content_area section address p span {font-size: 1.25em; margin: 0 40px 0 15px; font-weight: 500;}

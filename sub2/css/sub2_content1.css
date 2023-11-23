@@ -1,0 +1,51 @@
+/* 사업소개 본문css */
+.service_visual {width: 2000px; margin: 70px auto; position: relative;}
+.service_visual p {position: absolute; left: 50%; top: 180px; font-size: 2.125em; color: #fff; margin-left: -292px;}
+.service_visual p span {color: #f00;}
+.tabs {display: flex; width: 800px; margin: 0 auto; margin-top: 120px;}
+.tabs .tab {width: 400px; height: 50px; margin-right: 30px;}
+.tabs .tab:last-child {margin-right: 0;}
+.tabs .tab a {transition: all .5s; font-size: 1.5em; color: #333; padding: 15px; text-align: center; border: 2px solid #ccc; border-radius: 32px;font-weight: 400;}
+.tabs .tab:hover a,.tabs .tab.current a {color: #fff; font-weight: 500; background: #1c1c1c; border: 2px solid #f00;}
+/* cordless */
+.cordless {width: 1200px; background: #1c1c1c; margin: 150px auto; position: relative; border-radius: 50px; border: 2px solid #f00; display: none;}
+.cordless h3 {font-size: 1.5em; color: #fff; position: relative; margin: 0 auto ; left: 50%; top: -20px; margin-left: -100px; z-index: 10;}
+.cordless h3::before {content: ""; display: block; width: 220px; height: 50px; background: #f00; transform: skew(-30deg); position: absolute; left: -20px; top: -5px; z-index: -1;}
+.cordless img {border-radius: 50%; margin: 60px 0 0 100px; width: 300px; float: left;}
+.summary {overflow: hidden; margin-bottom: 120px;}
+.summary dl {float: left; width: 600px; padding-left: 100px; margin-top: 70px; text-align: justify; color: #fff;}
+.summary dl dt {font-size: 1.825em; font-weight: 500; margin: 70px 0 40px;}
+.summary dl dd {font-size: 1.125em;font-weight: 400; margin: 20px 0;}
+.setup {overflow: hidden; padding: 30px 0;}
+.setup dl {float: left; width: 555px; height: 400px; background: #fff; margin: 0 30px; text-align: justify;}
+.setup dl:last-child {margin-left: 0px;}
+.setup dl dt {font-size: 1.5em; font-weight: 500; margin: 60px 0 40px 60px;}
+.setup dl dd {position: relative; font-size: 1em;font-weight: 400; margin: 10px 0 0 75px;}
+.setup dl dd::before {content: ""; display: block; position: absolute; left: -20px; top: 11px; width: 6px; height: 4px; transform: skew(-30deg); background: #f00;}
+.use {overflow: hidden; margin-top: 40px;}
+.use dl {color: #fff; float: left; width: 600px; padding-left: 150px; margin-top: 15px; text-align: justify;}
+.use dl dt {font-size: 1.825em; font-weight: 500; margin: 55px 0 40px;}
+.use dl dd {font-size: 1.125em;font-weight: 400; margin: 20px 0;}
+.use dl dd:last-child{margin-bottom: 0;}
+.service_sns {float: right; display: flex; margin-right: 490px;}
+.service_sns li a {color: #fff; font-size: 2em; padding: 15px;}
+.use_time {width: 1200px; margin: 0 auto; overflow: hidden; padding: 120px 0;}
+.use_time dl {color: #fff; float: left; width: 400px; text-align:center;}
+.use_time dt {width: 250px; padding: 15px 0 30px; font-size: 1.5em; font-weight: 500; border-bottom: 4px solid #f00; margin: 0 auto;}
+.use_time dd span {margin-right: 15px; font-size: 1.125em; font-weight: 500;}
+.use_time dd {width: 250px; font-size: 1.125em;font-weight: 400; margin: 40px auto 30px;}
+.use_time dl:first-child dd:last-child {margin: 0 auto;}
+/* cable tab */
+.cable {width: 1200px; background: #1c1c1c; margin: 150px auto; position: relative; border-radius: 50px; border: 2px solid #f00; display: none;}
+.cable h3 {font-size: 1.5em; color: #fff; position: relative; margin: 0 auto ; left: 50%; top: -20px; margin-left: -100px; z-index: 10;}
+.cable h3::before {content: ""; display: block; width: 220px; height: 50px; background: #f00; transform: skew(-30deg); position: absolute; left: -20px; top: -5px; z-index: -1;}
+.cable img {border-radius: 50%; margin: 60px 0 0 100px; width: 300px; float: left;}
+.cable .setup {overflow: hidden; padding: 30px 0;}
+.cable .setup dl {float: left; width: 1080px; height: 300px; background: #fff; margin: 0 30px; padding: 0 30px; text-align: justify;}
+.cable .setup dl dt {font-size: 1.5em; font-weight: 500; margin: 60px 0 40px 60px;}
+.cable .setup dl dd {position: relative; font-size: 1em;font-weight: 400; margin: 10px 0 0 75px;}
+.cable .setup dl dd::before {content: ""; display: block; position: absolute; left: -20px; top: 11px; width: 6px; height: 4px; transform: skew(-30deg); background: #f00;}
+
+
+
+

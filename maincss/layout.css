@@ -1,0 +1,141 @@
+/* index css */
+#content {position: relative;}
+/* 비주얼 영역 */
+.visual {width: 2000px; position:relative; left: 50%; margin-left: -1000px; background: #1c1c1c;}
+.visual p {position: absolute; left: 50%; top: 480px; margin-left: -600px; font-size: 3.125em; color: #fff; font-weight: 500;}
+.visual p span {color: #f00;}
+.gallery {position:relative;left:0; top:0; overflow:hidden; width:2000px; height:1080px;}
+.gallery li{display:none; position: relative;}
+
+.gallery img{animation: ani 30s linear infinite;}
+@keyframes ani {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+.gallery li span{position: absolute; left: 450px; top: 450px; opacity: 0; 
+    font-size: 50px; color: #fff; font-weight: 700; text-shadow: 1px 1px 10px rgba(0, 0, 0, .15);}
+.gallery li span strong {color: #f00;}
+/* .gallery .link1 span{ left:  100px; top: 300px;} */
+.gallery li span > em {font-style: normal; font-size: 1.725rem;}
+
+.dock{width:450px; position:absolute; left:450px; top:600px;}
+
+.dock .mbutton{ margin-right:15px; cursor:pointer; 
+    display:block; float:left; width:100px; height:4px;
+   background: #eee; transition: all .5s}
+
+.dock .ps{ margin-right:15px; margin-top: -13px; cursor:pointer; 
+    display:block; float:left; width:25px; height:25px;
+    }
+.dock .ps i{font-size: 2em; color: #eee;} 
+
+.visual .btn{display: block; width: 80px; height: 100px; position: absolute;  top:580px;cursor:pointer;}
+.visual .btnLeft{color: #ddd; background: rgba(255, 255, 255, .1); left:40px; top: 480px; text-align: center; font-size: 4em; margin-left: 10px;}
+.visual .btnLeft:hover{color: #fff; background: rgba(255, 255, 255, .6);}
+.visual .btnRight{color: #ddd; background: rgba(255, 255, 255, .1); right:40px; top: 480px; text-align: center; font-size: 4em; margin-right: 10px;}    
+.visual .btnRight:hover{color: #fff; background: rgba(255, 255, 255, .6);}
+/* 컨텐츠 영역 */
+#content {}
+/* 컨텐츠 비지니스 */
+.business {margin: 240px 0;}
+.business_inner {width: 1200px; margin: 0 auto; position: relative;}
+.business_img {width: 1350px; height: 650px; margin-left: -400px;}
+.business_inner h3 {font-size: 4.375em; font-weight: 700; line-height: 65px;}
+.business_inner ul {position: absolute; right: 0; top:33.33%;}
+.business_inner ul li {width: 300px; height: 80px; margin: 30px 0 ; padding: 5px 10px 0 0; font-size: 1.5em; border-bottom: 2px solid rgba(0, 0, 0, 0); position: relative;}
+.business_inner ul li h4 a::before {content: ""; display: block; width: 0; height: 3px; background:#f00; position: absolute; left: 0; bottom: -10px; transition: all .5s ease-out;}
+.business_inner ul li h4 a:hover::before, .business_inner ul li h4 a.current::before{width: 300px; height: 3px;}
+.business_inner ul li h4 a{display: inline; font-size: 1.5em; transition: all .5s;}
+.business_inner ul li:hover h4 a, .business_inner ul li h4 a.current{width: 300px; font-size: 2.7rem; color: rgba(255, 0, 0, 1);}
+.business_inner ul h4 { font-weight: 700; text-align: right; padding: 15px; transition: all .5s;}
+.business_inner dl {display: block; position: absolute; left: 0; top: 30%; z-index: 3;}
+.business_inner dl dt {font-size: 2em; color: #fff; margin: 0 0 30px; font-weight: 500;}
+.business_inner dl dd {width: 500px; color: #fff; font-size: 1.2em; line-height: 1.5em; text-align: justify;}
+.business_inner dl dd span {color: #f00; font-weight: 500; font-size: 1.2em; line-height: 1.5em;}
+.business_inner dl dd:last-child a {width: 120px; margin-top: 40px; display: block; font-weight: 500; color: #fff; padding: 10px 20px; border: 1px solid #fff; transition: all 1s;}
+.business_inner dl dd:last-child:hover a {background: #f00;}
+.business_inner dl dd:last-child i {margin-left: 40px;}
+/* 컨텐츠 esg경영 */
+.management {margin: 120px 0; width:2000px; height: 960px; position: relative; left:50%; margin-left: -1000px;}
+.management .gray {display: block; width: 2000px; height: 960px; background: rgba(0, 0, 0, .15); position: absolute; left: 0; top: 0;}
+.management h3 {text-align: center; font-size: 4.375em; font-weight: 700; position: absolute; left: 35%; top: 150px; color: #fff;}
+.management ul {overflow: hidden; position: absolute; margin-left: -600px; left: 50%; top: 320px; width: 1200px;
+             padding: 15px;}
+.management ul li { float: left; margin-right: 45px; width: 370px; height: 530px; background: rgba(255, 255, 255, .0); transition: all .5s;}
+.management ul li:nth-of-type(3) {margin-right: 0;}
+.management ul li:nth-of-type(1):hover, .management ul li:nth-of-type(1).current {background: rgba(112, 185, 187, .9);
+  box-shadow: 15px 15px 0 0 rgba(0,0,0,.5);}
+.management ul li:nth-of-type(2):hover, .management ul li:nth-of-type(2).current {background: rgba(255, 0, 0, .9); box-shadow: 15px 15px 0 0 rgba(0,0,0,.5);}
+.management ul li:nth-of-type(3):hover, .management ul li:nth-of-type(3).current {background: rgba(0, 0, 0, .9); box-shadow: 15px 15px 0 0 rgba(255,255,255,.5);}
+.management ul dl {height: 350px;}
+.management ul span { display:block; font-size: 10rem; text-align: center; margin: 50px 0 30px 0; color: #fff;
+   transition: all .5s;}
+.management ul li:hover span{transform: scale(1.1);} 
+.management .esg_more {font-weight: 500; color: #fff; display: block; width: 100px; text-align: center;  padding:15px 0; margin: 0 auto; position: relative;  transition: all .5s;}
+.management .esg_more:hover {color: #fff; font-weight: 700;}
+.management .esg_more::before {content: ""; display: block; width: 0; height: 2px; background: #fff; position: absolute; left:15px; top: 45px; transition: all .5s;}
+.management .esg_more:hover::before {content: ""; display: block; width: 70px; height: 2px; background: #fff;  }
+.management {text-align: center; color: #fff;}
+.management dt {font-size: 2em; font-weight: 700;}
+.management dd {line-height: 1.5em; text-align: justify; font-size: 1.3em;  margin: 30px 20px;}
+/* 컨텐츠 벨류 */
+.value {position: relative;}
+.value::before {content: "Company"; font-size: 9.375em; font-weight: 700; color: #fff; width: 1600px; height: 400px; position: absolute; left: 50%; top: 100px; margin-left: -1000px; background: #f9f9f9; padding: 750px 0 50px 100px; box-shadow: 2px 2px 20px rgba(0, 0, 0, .09); z-index: -2;}
+.value::after {content: "Value"; font-size: 9.375em; font-weight: 700; color: #fff; position: absolute; left: 50%; top: 1020px; margin-left: -500px; z-index: -2;}
+.value .value_inner {width: 1200px; margin: 120px auto; position: relative;}
+.value_inner h3 {font-size: 4.375em; font-weight: 700; position: absolute; left: 0; top: 0;}
+.value_inner ul {overflow: hidden;}
+.value_inner ul li {float: right; width: 550px; height: 650px; color: #fff;border-radius: 30px; margin-bottom: 75px;}
+.value_inner ul li span:first-child {margin-left: 10px}
+.value_inner ul li:first-child span:first-child {margin-left: 0}
+.value_inner ul li:nth-of-type(1) {float: left; width: 550px; height: 650px; background: #f00 ; margin-top: 190px; margin-bottom: 0;}
+.value_inner ul li:nth-of-type(2) {background: #1c1c1c;}
+.value_inner ul li:nth-of-type(3) {background: #49d3cb;}
+.value_inner .material-symbols-outlined {float: left; font-size: 18.750em;}
+.value_inner ul li a {position: relative; display: block; color: #fff; font-size: 1.2em; font-weight: 500; margin: 300px 0 0 400px; padding: 15px; z-index: 3;}
+.value_inner ul li a::before {content: ""; display: block; width: 0px; height: 30px; background: #fff; position: absolute; left: 0px; top: 15px; transition: all .5s; transform: skew(-30deg); z-index: -1;}
+.value_inner ul li a:hover {color: #f00;}
+.value_inner ul li a:hover .material-symbols-outlined:last-child {color: #f00;}
+.value_inner ul li a:hover::before {width: 120px;}
+.value_inner .material-symbols-outlined:last-child {color: #fff; font-weight: 500; font-size: 1.2rem; text-align: center; float: none; margin-left: 0; transform: rotate(0); transition: all .5s;}
+.value_inner ul li a:hover .material-symbols-outlined {transform:rotate(180deg);}
+.value li dl {color: #fff; float: left; margin: 0 35px;}
+.value li p {font-size: 1.875rem; font-weight: 500; margin-top: 225px;}
+.value li p span {font-size: 1.2rem; font-weight: 400; margin-left: 0;}
+.value dl dt {font-size: 1.875em; margin: 80px 0 50px;}
+.value dl dt span {font-size: 1.2rem; font-weight: 400;}
+.value dl dd {width: 450px; line-height: 2em; font-size: 1.2em; text-align: justify;}
+.value dl dd:last-child span {color: #f00; font-weight: 700;}
+/* 컨텐츠 뉴스 */
+.news {width: 2050px; position:relative; left:50%; margin-left: -1025px; top:0; 
+  padding-top: 100px;}
+.news h3 {font-size: 4.375em; font-weight: 700; margin-left: 400px; }
+.news .slide_gallery {position: relative; width: 4100px; margin: 50px 0 240px; padding: 20px 0; overflow: hidden;}
+.news ul {float: left; width: 2050px;}
+.news ul li {position: relative; float: left; overflow: hidden; width: 370px; height: 450px; margin: 0 20px;}
+.news ul li {box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, .2); transition: all .5s;}
+.news ul li:hover{box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, .7);}
+.news .news_slide {position: absolute;right: 400px; top:150px}
+.news .news_slide a {display: inline;}
+.news .news_slide a span {text-align: center; font-size: 2.5em; color: #ccc; transition: all .5s;}
+.news .news_slide a span:hover{color: #666;}
+.news .more {font-weight: 500; color: #fff; display: block; width: 100px; height: 20px; padding:15px; margin: 20px auto 0; position: relative; left: 0; bottom: 0px; transition: all .5s; text-align: center;}
+.news .more:hover {color: #f00; font-weight: 700;}
+.news .more::before {content: ""; display: block; width: 0; height: 2px; background: #fff; transition: all .5s; position: absolute; left: 30px; top: 40px;}
+.news .more:hover::before {content: ""; display: block; width: 70px; height: 2px; background: #f00; position: absolute; left: 30px; top: 40px;}
+.news li img {transform: scale(1);transition: all .5s ease-out;}
+.news li:hover img {transform: scale(1.03);}
+.news li dl {position: absolute; left: 0; top: 350px; width: 370px; height: 450px; color: #fff; background: rgba(0, 0, 0, .5); transition: all .5s ease-out;}
+.news li:hover dl{position: absolute; left: 0; top: 0; width: 370px; height: 450px; color: #fff; background: rgba(0, 0, 0, .7);}
+.news li:hover dl dt {margin-top: 75px; font-size: 1.25em; font-weight: 600;}
+.news dl dt {font-size: 1.125em; margin: 25px 30px 20px; text-align: center; transition: all .5s ease-out; transition-delay: .5s;}
+.news dl dd {text-align: justify; line-height: 1.5em; margin: 0 20px; height: 200px;}
+/* 컨텐츠 인재채용 */
+.recruit {background: url(../images/recruit.jpg); width: 2000px; height: 710px; position: relative; left: 50%; top: 0; margin-left: -1000px;}
+.recruit h3 {position: absolute; left: 0; top: 180px; font-size: 4.375rem; font-weight: 700; margin-left: 20%; color: #fff;}
+.recruit h3 span {display: block; font-size: 2rem; line-height: 1rem; font-weight: 300;}
+.recruit p {position: absolute; left: 0; top: 400px; width: 600px; height: 200px; font-size: 1.5rem; color: #fff; margin-left: 20%;}
+.recruit a {position: absolute; right: 500px; top: 450px; width: 120px; margin-top: 40px; display: block; font-size: 1.2em; font-weight: 500; color: #fff; padding: 10px 20px; border: 1px solid #fff; transition: all 1s;}
+.recruit a i {margin-left: 40px;}
+.recruit a:hover {background: #f00;}

@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url("https://jhj96.cafe24.com/common/css/aos.css");
+/* CSS Reset */
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+html{ font-size: 16px;}
+body{font-family: 'Noto Sans KR', sans-serif,'Roboto', sans-serif;color: #333}
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+address{font-style: normal}
+a{color: #333; text-decoration: none; display: block;}
+img{border: 0; vertical-align: top}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.hidden{display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff}
+/* skipNav */
+.skipNav{position:relative;width:100%;overflow:hidden; z-index: 110; font-family: 'Noto Sans KR', sans-serif;}
+.skipNav a{display:block; height:1px; margin-bottom:-1px;overflow:hidden; text-align:center; text-decoration:none; color:#fff; font-size:1.2em; font-weight: 700;}
+.skipNav a:hover,.skipNav a:focus,.skipNav a:active{display:block;height:auto;padding:15px 0; background: rgba(255,0,0,1);}
+/* wrap */
+.wrap {width: 100%; overflow: hidden;}
+/* 헤더공통css */
+#headerArea {width: 100%; background: rgba(0, 0, 0, 0.5); position: fixed; z-index: 1000; transition: background .5s;}
+.header_inner {width: 1200px; margin: 0 auto;}
+.header_inner::after {content: ""; display: block; clear: both;}
+.header_inner .logo {float: left; margin: 25px 0 25px 0;}
+.header_inner .logo a {width: 155px; height: 70px; text-indent: -1000%; overflow: hidden; color: #fff; background-image: url(../images/ktis_logo.png);transition:background .5s;}
+#gnb {float: left;width:880px; margin-left: 15px;}
+.dropdownmenu{width: 850px; margin: 45px 20px 0;}
+.dropdownmenu {content: ""; display: block; clear: both;}
+.dropdownmenu li.menu{position:relative;float:left;width:16.66%;}
+.dropdownmenu li h3 a.depth1{padding: 15px 0; color:#fff; text-align: center; font-size: 1.375em; font-weight:500;}
+.dropdownmenu > li {transition: all .5s;}
+.dropdownmenu > li::before {content: ""; display: block; width: 100%; height: 2px; background: #f00; position: absolute; left: 0; top: 60px; opacity: 0; transition: all .3s;}
+.dropdownmenu > li:hover::before {opacity: 1; top: 65px; width: 100%;}
+/* 2depth */
+.dropdownmenu li ul{width:100%; height:165px; position:absolute; top:50px;left:0; padding:30px 0; line-height:2em; display:none; transition: all .5s;}
+.dropdownmenu li ul li{text-align:center;}
+.dropdownmenu li ul li a{display:block; color:#666; transition: all .5s;}
+.dropdownmenu li ul li a:hover{color: #fff; background:#49d3cb; border-radius: 5px;}
+.top_menu {overflow: hidden; margin-top: 50px; float: right;}
+.top_menu li {float: left;}
+.top_menu li a {display: block; padding: 15px; font-size: 1.125em; font-weight: 400; color: #eee;}
+.top_menu li a:last-child {padding-right: 0;}
+/* on */
+#headerArea.on{background:#fff; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+#headerArea.on h1 a{background-image:url(../images/ktis_logo_black.png);}
+#headerArea.on .dropdownmenu > li h3 a{color:#333;}
+#headerArea.on .dropdownmenu > li:hover h3 a{color:#f00}
+#headerArea.on .top_menu li a{color:#666;}
+
+/* 푸터공통css */
+#footerArea {width: 100%; background: #1c1c1c; color: #fff;}
+#footerArea .footer_menu {overflow: hidden; width: 100%; border-bottom: 1px solid #fff;}
+#footerArea .footer_menu li {float: left; margin-right: 30px;}
+#footerArea .footer_menu li:first-child {margin-left: 345px;}
+#footerArea .footer_menu li:last-child {margin-right: 0;}
+#footerArea .footer_menu li a {display: block; color: #fff; padding: 10px; font-weight: 500;}
+.footer_inner {width: 1200px; margin: 0 auto;}
+.footer_inner::after {content: ""; display: block; clear: both;}
+.footer_inner img {float: left; width: 155px; margin-top: 40px;}
+.footer_inner address {float: left; width: 500px; padding: 30px;}
+.footer_inner address p {margin-bottom: 10px; line-height: 1.5em;}
+.footer_inner address .copy {margin: 20px 0 0;}
+.family {float: right; width: 150px; height: 46px; margin-top: 56px;} 
+.family .select{width:150px;background:#fff; border:1px solid #ccc;
+  position:relative;}
+.family .select .arrow{ display:block; font-size:1em; padding: 10px 0;
+  text-align: center; transition: all 1s;}
+.family .select .arrow i{font-size:.8em ; color: red;}
+.family .select .arrow:hover{color:#fff; background: #000;}
+.family .select .aList{ position:absolute; top:-142px; left:-1px; width:150px; 
+  border:1px solid #ccc; display:none; background: #fff;}
+.family .select .aList li{ line-height:1.5em; border-bottom:1px solid #ccc;}
+.family .select .aList li a{display:block; text-align: center; padding: 5px 0; transition: all 1s;}
+.family .select .aList li a:hover{color:#fff; background: #333;}
+.footer_inner .sns {float: right; margin: 40px 0 40px 50px;}
+.footer_inner .sns li {float: left; font-size: 2.5em;}
+.footer_inner .sns li:nth-of-type(3) {margin-right: 0;}
+.footer_inner .sns li a {display: block; width: 40px; height: 40px; padding: 10px; margin-right: 10px; text-align: center; color: #fff;}
+#footerArea .top_move {display: none; width: 50px; height: 50px; background: red; color: #fff; border-radius: 50%; overflow: hidden; transition: all .5s; position: fixed; right: 50%; bottom: 80px ; margin-right: -800px; z-index: 99;}
+#footerArea .top_move:hover {background: #000; color: #f00;}
+#footerArea .top_move span {display: block; text-align: center; margin-top: 8px; font-size: 2em;}
+
+
+
+
+
+
+
+
+
+
+

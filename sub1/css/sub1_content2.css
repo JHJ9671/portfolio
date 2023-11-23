@@ -1,0 +1,36 @@
+.content_area {margin: 70px 0;}
+.content_area .history_tab {background: #f00; height: 90px;}
+.content_area .history_tab .tab {overflow: hidden; height: 90px; width: 1200px; margin:0 auto;}
+.content_area .history_tab .tab li {float: left; width: 300px; height: 90px;}
+.content_area .history_tab .tab li a {padding: 15px; font-size: 2.5em; font-weight: 500; text-align: center; color: #fff; height: 90px;}
+.content_area .history_tab .tab li:hover a,
+.content_area .history_tab .tab li a.tabCurrent {background: #fff; color: #f00; font-weight: 700;}
+
+.history_tab{transition:all .3s;}
+.history_tab.on{position:fixed; left:0; top: 0; width: 100%; background:#f00; z-index:101;}
+#content .content_area .history_tab.on .tab{width:1200px; margin:0 auto;}
+#content .content_area .history_tab.on .tab li a{transition:background .3s;}
+#content .content_area .history_tab.on .tab li a.tabCurrent{color:#f00;background:#fff; font-weight:700;}
+
+.history_visual {width:100%;height: 300px;background-size: 2000px;}
+.history_visual:nth-of-type(1) {background: url(../images/content2/history_visual1.jpg)center bottom no-repeat fixed;}
+.history_visual:nth-of-type(2) {background: url(../images/content2/history_visual2.jpg)center bottom no-repeat fixed;}
+.history_visual:nth-of-type(3) {background: url(../images/content2/history_visual3.jpg)center bottom no-repeat fixed; filter: saturate(0.4);}
+.history_visual:nth-of-type(4) {background: url(../images/content2/history_visual4.jpg)center bottom no-repeat fixed;}
+.history_visual p {font-size: 1.5em; font-weight: 400; text-align: center; color: #fff;}
+.history_visual p:first-of-type {font-size: 2em; font-weight: 600; padding: 80px 0 30px;}
+section {position: relative;}
+section::before {content: ""; display: block; width: 4px; height: 5000px; background: #f00; position: absolute; left: 50%; top: 0; margin-left: -150px; z-index: -1;}
+section dl {position: relative; overflow: hidden; margin: 0 auto 30px; width: 1200px; padding: 20px 20px 40px 20px;}
+section dl:first-of-type {padding-top: 70px;}
+section dl:first-of-type::before {top: 150px;}
+section dl:last-of-type {padding-bottom: 150px;}
+section dl::before {content: ""; display: block; width: 30px; height: 30px; background: #fff; border: 3px solid #f00; position: absolute; left: 50%; top: 100px; margin-left: -166px; border-radius: 50%;}
+section dl dt {float: left; width: 500px; font-size: 7.5em; color: #f00; font-weight: 700;}
+section dl dd {font-size: 1.1em; width: 600px; float: right; font-weight: 500; line-height: 3em; padding-left: 100px;}
+section dl dd:first-of-type {padding-top: 45px;}
+section:last-of-type dl:last-of-type dt {font-size: 6em; margin-top: 25px;}
+
+
+
+

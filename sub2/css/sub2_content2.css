@@ -1,0 +1,40 @@
+/* info */
+.info {position: relative; margin: 70px auto; width: 1200px; height: 400px; background: url(../images/content2/info.jpg) no-repeat center;}
+.info h3 {font-size: 1.5em; color: #fff; position: relative; width: 120px; left: 50%; top: 100px; margin-left: -60px; z-index: 10; text-align: center;}
+.info h3::before {content: ""; display: block; width: 150px; height: 50px; background: #f00; transform: skew(-30deg); position: absolute; left: -13px; top: -5px; z-index: -1;}
+.info span {display: block;width: 800px; margin: 170px auto 0; text-align: justify; line-height: 2em; font-size: 1.25em; color: #fff;}
+.info p {position: absolute; left: 0; top: 0; width: 1200px; height: 400px; background: rgba(0, 0, 0, .35);} 
+/* outsourcing */
+.outsourcing {position: relative; margin: 120px auto; width: 1200px; height: 1100px; background: #1c1c1c; border-radius: 50px; border: 2px solid #f00;}
+.outsourcing h3 {font-size: 1.5em; color: #fff; position: relative; width: 120px; left: 50%; top: -20px; margin-left: -60px; z-index: 10; text-align: center;}
+.outsourcing h3::before {content: ""; display: block; width: 150px; height: 50px; background: #f00; transform: skew(-30deg); position: absolute; left: -13px; top: -5px; z-index: -1;}
+.outsourcing p {width: 800px; margin: 170px auto 0; text-align: justify; line-height: 2em; font-size: 1.25em; color: #fff;}
+.outsourcing dl {width: 1100px; height: 250px; background: #fff; margin: 150px auto; text-align: justify; border-radius: 30px;}
+.outsourcing dt {font-size: 2em; font-weight: 400; padding: 40px 0 40px 40px;}
+.outsourcing dt span {font-size: 2.5rem; color: #f00; font-weight: 500;}
+.outsourcing dd {font-size: 1.125em; font-weight: 400; padding: 0 40px 40px 40px; line-height: 2em;}
+.outsourcing ul {margin: 100px 0 ;}
+.outsourcing ul li > dl {float: left; width: 340px; height: 420px; background: #fff; margin: 0 45px;}
+.outsourcing ul li > dl:last-child {margin-right: 0;}
+.outsourcing ul li > dl dt {text-align: center; font-size: 1.5em; padding: 40px; position: relative; font-weight: 500;}
+.outsourcing ul li > dl dt::before {content: ""; display: block; width: 260px; height: 4px; background: #f00; position: absolute; left: 40px; top: 110px;}
+.outsourcing ul li > dl dd {margin-top: 40px;}
+.outsourcing ul li > dl dd span {font-weight: 500; font-size: 1.25rem;}
+/* core */
+.core {position: relative; width: 1200px; height: 950px; margin: 0 auto;}
+.core_visual {position: relative; margin: 0 auto; width: 1200px; height: 620px; background: url(../images/content2/core.jpg) no-repeat center;}
+.core h3 {font-size: 1.5em; color: #fff; position: relative; width: 120px; left: 50%; top: 120px; margin-left: -60px; z-index: 10; text-align: center;}
+.core h3::before {content: ""; display: block; width: 150px; height: 50px; background: #f00; transform: skew(-30deg); position: absolute; left: -13px; top: -5px; z-index: -1;}
+.core span {display: block;width: 800px; margin: 170px auto 0; text-align: justify; line-height: 2em; font-size: 1.25em; color: #fff;}
+.core p {position: absolute; left: 0; top: 0; width: 1200px; height: 620px; background: rgba(0, 0, 0, .35);} 
+.core_info {position: absolute; left: 0; top: 320px; z-index: 10;}
+.core_info ul {overflow: hidden; width: 1200px; margin: 70px auto; padding: 30px 0;}
+.core_info li {float: left; width: 275px; height: 350px; margin-right: 20px; box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .15); background: #fff;}
+.core_info li:first-child {margin-left: 20px;}
+.core_info li:last-child {margin-right: 20px;}
+.core_info dl {padding-left: 25px;}
+.core_info dl dt {position: relative; font-size: 1.5em; font-weight: 500; padding: 30px 0;}
+.core_info dl dt::before {content: ""; display: block; width: 190px; height: 4px; background: #f00; position: absolute; left: 0; top: 85px;}
+.core_info dl dd {position: relative; line-height: 2em; text-align: justify; margin: 15px 15px 15px 25px; padding-right: 20px;}
+.core_info dl dd::before {content: ""; display: block; position: absolute; left: -20px; top: 14px; width: 6px; height: 4px; transform: skew(-30deg); background: #f00;}
+

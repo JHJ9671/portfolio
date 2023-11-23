@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투자정보 &gt; 경영공시</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_content1.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/5573423ce1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <? include "../common/subhead.html" ?>
+        <div class="visual">
+            <img src="./common/images/sub4_visual.jpg" alt="">
+            <span>투자정보</span>
+        </div>
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub4_1.html" class="current">경영공시</a></li>
+                <li><a href="./sub4_2.html">재무정보</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <a href="../index.html">HOME</a> &gt; <a href="./sub4_1.html">투자정보</a> &gt; <a href="./sub4_1.html"><strong>경영공시</strong></a>
+                </div>
+                <h2 data-aos="fade-up" data-aos-delay="100">투자정보</h2>
+                <p data-aos="fade-up" data-aos-delay="200">INVESTMENT <span>INFORMATION</span></p>
+            </div>
+            <div class="content_area">
+                <ul class="tabs" data-aos="fade-up" data-aos-delay="300">
+                    <li class="tab tab1"><a href="#">경영실적</a></li>
+                    <li class="tab tab2"><a href="#">주식현황</a></li>
+                </ul>
+                <section class="result" data-aos="fade-up" data-aos-delay="500">
+                    <h3 class="hidden">경영실적</h3>
+                    <table>
+                        <caption>경영실적</caption>
+                        <span>단위 : 백만원</span>
+                        <thead>
+                            <tr>
+                                <th scope="col">구분</th>
+                                <th scope="col">2022</th>
+                                <th scope="col">2021</th>
+                                <th scope="col">2020</th>
+                                <th scope="col">2019</th>
+                                <th scope="col">2018</th>
+                                <th scope="col">2017</th>
+                                <th scope="col">2016</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">매출액</th>
+                                <td>535,783</td>
+                                <td>468,004</td>
+                                <td>453,639</td>
+                                <td>451,027</td>
+                                <td>450,826</td>
+                                <td>438,131</td>
+                                <td>436,730</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">영업이익</th>
+                                <td>19,544</td>
+                                <td>14,405</td>
+                                <td>9,002</td>
+                                <td>13,757</td>
+                                <td>8,995</td>
+                                <td>11,079</td>
+                                <td>13,182</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">당기순이익</th>
+                                <td>15,916</td>
+                                <td>24,944</td>
+                                <td>7,387</td>
+                                <td>9,203</td>
+                                <td>7,901</td>
+                                <td>8,337</td>
+                                <td>9,991</td>
+                            </tr>
+                        </tbody>                       
+                    </table>
+                    <p>※ 2010년 이후는 한국채택국제회계기준(K-IFRS)에 따라 작성</p>
+                    <div class="ir">
+                        <table class="ir">
+                            <caption>IR</caption>
+                            <tr>
+                                <th scope="row">2023년 2분기 실적자료</th>
+                                <td><a href="./images/content1/2Q23_20230807.pdf" download="2Q23_20230807.pdf"><i class="fa-solid fa-file-arrow-down"></i> 국문</a></td>
+                                <td>2023.08.07</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2023년 1분기 실적자료</th>
+                                <td><a href="./images/content1/1Q23_20230508.pdf" download="1Q23_20230508.pdf"><i class="fa-solid fa-file-arrow-down"></i> 국문</a><a href="./images/content1/1Q23_20230508_eng.pdf" download="1Q23_20230508_eng.pdf"><i class="fa-solid fa-file-arrow-down"></i> 영문</a></td>
+                                <td>2023.05.08</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2022년 4분기 실적자료</th>
+                                <td><a href="./images/content1/4Q22_20230208.pdf" download="4Q22_20230208.pdf"><i class="fa-solid fa-file-arrow-down"></i> 국문</a></td>
+                                <td>2023.02.08</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2022년 3분기 실적자료</th>
+                                <td><a href="./images/content1/3Q22_20221107.pdf" download="3Q22_20221107.pdf"><i class="fa-solid fa-file-arrow-down"></i> 국문</a></td>
+                                <td>2022.11.07</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2022년 2분기 실적자료</th>
+                                <td><a href="./images/content1/2Q22_20220809.pdf" download="2Q22_20220809.pdf"><i class="fa-solid fa-file-arrow-down"></i> 국문</a></td>
+                                <td>2022.08.09</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2022년 1분기 실적자료</th>
+                                <td><a href="./images/content1/1Q22_20220509.pdf" download="1Q22_20220509.pdf"><i class="fa-solid fa-file-arrow-down"></i> 국문</a></td>
+                                <td>2022.05.09</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+                <section class="stock">
+                    <h3 class="hidden">주식현황</h3>
+                    <table>
+                        <caption>주식현황</caption>
+                        <tbody>
+                          <tr>
+                            <th scope="row">수권자본금</th>
+                            <td>500억</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">납입자본금</th>
+                            <td>174억원</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">발행주식수</th>
+                            <td>34,802,000주</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">액면가</th>
+                            <td>500원/주</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">계좌이체</th>
+                            <td>가능</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">주권구분</th>
+                            <td>통일주권</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>※ 당사는 2010년 3월 30일 주식의 액면가를 5,000원에서 500원으로 변경하였습니다.</p>
+                    <div class="stockholder">
+                        <div class="chart1">
+                          <canvas id="myChart"></canvas>
+                        </div>
+                        <span class="center"></span>
+                        <ul>
+                            <li>KT</li>
+                            <li>KT is</li>
+                            <li>KB증권(자사주신탁)</li>
+                            <li>개인주주 1명</li>
+                            <li>기타</li>
+                        </ul>
+                        <table summary="주주, 주식수(주) , 비율(%)">
+                            <thead>
+                              <tr>
+                                <th scope="col">주주</th>
+                                <th scope="col">비율(%)</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>주식회사 케이티</td>
+                                <td>29.30%</td>
+                              </tr>
+                          
+                              <tr>
+                                <td>주식회사 케이티아이에스</td>
+                                <td>6.75%</td>
+                              </tr>
+                              <tr>
+                                <td>주식회사 KB증권(자사주신탁)</td>
+                                <td>5.26%</td>
+                              </tr>
+                              <tr>
+                                <td>개인주주 1명</td>
+                                <td>1.08%</td>
+                              </tr>
+                              <tr>
+                                <td>기타</td>
+                                <td>57.61%</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <? include "../common/subfoot.html" ?>
+        <script src="./js/tab.js"></script>
+        <script>
+          const data = {
+              labels: [
+                'KT',
+                'KT is',
+                'KB증권',
+                '개인주주 1명',
+                '기타'
+              ],
+              datasets: [{
+                label1: ['29.30%'],
+                label2: ['6.75%'],
+                label3: ['5.26%'],
+                label4: ['1.08%'],
+                label5: ['57.61%'],
+                data: [29.30, 6.75, 5.26, 1.08, 57.61],
+                backgroundColor: [
+                  '#FFBA4A',
+                  '#C2FF63',
+                  '#309DFF',
+                  '#D83DFF',
+                  '#FF5E49'
+                ],
+                hoverOffset: 0
+              }]
+            };
+                        
+            const config = {
+              type: 'doughnut',
+              data: data,
+            };
+            
+            const myChart = new Chart(
+                  document.getElementById('myChart'),
+                  config
+            );
+          
+        </script>
+</body>
+</html>

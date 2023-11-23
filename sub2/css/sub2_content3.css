@@ -1,0 +1,30 @@
+/* townboard */
+.townboard {position: relative; height: 1000px;}
+.townboard p {font-size: 2.5em; font-weight: 500; text-align: center; width: 650px; line-height: 1.5em; margin: 200px auto;}
+.townboard h3 {font-size: 1.5em; color: #fff; position: relative; width: 120px; left: 50%; top: 50px; margin-left: 240px; z-index: 10; text-align: center;}
+.townboard h3::before {content: ""; display: block; width: 150px; height: 50px; background: #f00; transform: skew(-30deg); position: absolute; left: -13px; top: -5px; z-index: -1;}
+.townboard_visual {position: relative;}
+.townboard_visual img {position: absolute; left: 50%; top: 0; margin-left: -1100px; border-radius: 0px 30px 30px 0px;}
+.townboard .info {position: relative; left: 50%; top: 100px; width: 600px;}
+.townboard .info dl dt {position: relative; font-size: 1.5em; font-weight: 500; padding: 30px 0;}
+.townboard .info dl dt::before {content: ""; display: block; width: 600px; height: 4px; background: #f00; position: absolute; left: 0; top: 85px;}
+.townboard .info dl dd {position: relative; line-height: 2em; text-align: justify; margin: 15px 15px 15px 25px;}
+.townboard .info dl dd::before {content: ""; display: block; position: absolute; left: -20px; top: 14px; width: 6px; height: 4px; transform: skew(-30deg); background: #f00;}
+.digital_commerce {position: relative; height: 1100px; margin-bottom: 250px;}
+.digital_commerce p {font-size: 2.5em; font-weight: 500; text-align: center; width: 650px; line-height: 1.5em; margin: 200px auto;}
+.digital_commerce h3 {font-size: 1.5em; color: #fff; position: relative; width: 150px; left: 50%; top: 50px; margin-left: -380px; z-index: 10; text-align: center;}
+.digital_commerce h3::before {content: ""; display: block; width: 180px; height: 50px; background: #f00; transform: skew(-30deg); position: absolute; left: -13px; top: -5px; z-index: -1;}
+.digital_commerce_visual {position: relative;}
+.digital_commerce_visual img {position: absolute; left: 50%; top: 0; margin-left: 100px; border-radius: 30px 0px 0px 30px;}
+.digital_commerce .info {position: relative; left: 50%; top: 100px; width: 600px; margin-left: -600px;}
+.digital_commerce .info dl dt {position: relative; font-size: 1.5em; font-weight: 500; padding: 30px 0;}
+.digital_commerce .info dl dt::before {content: ""; display: block; width: 600px; height: 4px; background: #f00; position: absolute; left: 0; top: 85px;}
+.digital_commerce .info dl dd {position: relative; line-height: 2em; text-align: justify; margin: 15px 15px 15px 25px;}
+.digital_commerce .info dl dd::before {content: ""; display: block; position: absolute; left: -20px; top: 14px; width: 6px; height: 4px; transform: skew(-30deg); background: #f00;}
+.digital_commerce .info ul {overflow: hidden; width: 600px;}
+.digital_commerce .info ul li {float: left; width: 140px; margin-right: 10px;}
+.digital_commerce .info ul li:last-child{margin-right: 0;}
+.digital_commerce .info .partner {margin: 30px 0;}
+.digital_commerce .info .partner ul li a span {display: block; text-indent: -9999px; overflow: hidden;}
+.digital_commerce .info .partner::before {display: none;}
+
