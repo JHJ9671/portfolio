@@ -1,0 +1,46 @@
+.visual { background: url(../images/sub3_visualx2.jpg) center no-repeat; background-size: cover;}
+.sub_menu ul li {float: left; width: 50%;text-align: center; font-size: 1.25rem;}
+/* content */
+/* ethical mamagement */
+.tabs {width: 100%; margin: 44px auto 0; overflow: hidden;}
+.tabs .tab {float: left; width: 50%; border-bottom: 4px solid #f00; text-align: center; font-size: 1.1em;}
+.tabs .tab a {padding: 15px 0; transition: all .5s;}
+.tabs .tab a:hover, .tabs .tab.current a{background: #1c1c1c; color: #fff; font-weight: 500;}
+/* ethical tab */
+.ethical {background: #1c1c1c; width: 100%; padding-bottom: 70px; display: none;}
+.ethical h3 {font-size: 1.6em; color: #fff;font-weight: 700; text-align: center; padding: 44px 0;}
+.ethical dl {width: 100%; margin: 30px auto 70px; color: #ccc;}
+.ethical dt {width: 80%; margin: 0 10%; font-size: 1.25rem; color: #fff; text-align: center;}
+.ethical dt span {font-size: 1.25rem; color: #f00; margin-right: 10px;}
+.ethical dd {width: 70%; margin: 20px 15% 20px; line-height: 2em; font-size: 1.125em; font-weight: 400; color: #ccc; text-align: justify; position: relative;}
+.ethical dd::before {content: ""; display: block; position: absolute; left: -20px; top: 16px; width: 6px; height: 4px; transform: skew(-30deg); background: #f00;}
+#content .ethical dl:first-of-type dt span {margin-right: 0;}
+#content .ethical dl:first-of-type dd {margin: 20px 15% 20px;}
+#content .ethical dl:first-of-type dd::before{display: none; }
+/* report tab */
+.report {background: #1c1c1c; width: 100%; padding-bottom: 70px; display: none;}
+.report h3 {font-size: 1.6rem; color: #fff; padding: 44px 0 0; font-weight: 500; text-align: center;}
+.report h4 {font-size: 1.4rem; color: #fff; font-weight: 400; text-align: center;}
+.report p {width: 1000px; margin: 0 auto; color: #ccc; font-size: 1.125em; text-align: justify; line-height: 2em; margin-bottom: 100px;}
+.report p span {color: #f00; font-size: 1.25em;}
+.report dl {width: 100%; color: #ccc;}
+.report li {margin: 44px 0; width: 100%;}
+.report dt {width: 80%; margin: 0 10%; font-size: 1.25rem; color: #fff;}
+.report dt span {font-size: 1.25rem; color: #f00; margin-right: 10px;}
+.report dd {width: 70%; margin: 20px 15% 20px; line-height: 2em; font-size: 1.125rem; font-weight: 400; color: #ccc; text-align: justify; position: relative;}
+.report dd::before {content: ""; display: block; position: absolute; left: -20px; top: 16px; width: 6px; height: 4px; transform: skew(-30deg); background: #f00;}
+.report dd a {display: inline; text-align: left; color: #f00;}
+.report dd span {display: block;}
+.report dd dl dd {width: 95%; margin-right: 5%;}
+.report > ul li:first-of-type li {font-size: 1.25rem; color: #fff;}
+.report > ul li:first-of-type li:nth-last-of-type(1) {width: 80%; margin: 20px 10%}
+.report > ul li:first-of-type li:nth-last-of-type(2) {width: 80%; margin: 20px 10%}
+.report > ul li:first-of-type li span {font-size: 1.25rem; color: #f00; margin-right: 10px;}
+.report .reward {width: 96%; margin: 0 2%;}
+.report .reward::before {display: none;}
+.report table {width: 90%; margin: 0 5%; border-collapse: collapse; text-align: center;}
+.report table th,td {padding: 5px; border: 1px solid #ccc;}
+.report table th {font-weight: 400;}
+.report table td {color: #fff; font-weight: 500;}
+
+

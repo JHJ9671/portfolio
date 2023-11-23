@@ -1,0 +1,37 @@
+.visual { background: url(../images/sub4_visualx2.jpg) center no-repeat; background-size: cover;}
+.sub_menu ul li {float: left; width: 50%;text-align: center; font-size: 1.25rem;}
+/* content */
+.tabs {width: 100%; margin: 44px auto 0; overflow: hidden;}
+.tabs .tab {float: left; width: 50%; border-bottom: 10px solid #f00; text-align: center; font-size: 1.1em;}
+.tabs .tab a {padding: 15px 0; transition: all .5s;}
+.tabs .tab.current a{background: #1c1c1c; color: #fff; font-weight: 500;}
+.stat {display: none;}
+.fin_stat {width: 100%; background: #1c1c1c; position: relative; padding-bottom: 44px;}
+.fin_stat span {display: block; width: 90%; margin: 0 5%; text-align: right; color: #999;}
+.fin_stat table {width: 90%; margin: 22px 5%; border-collapse: collapse;}
+.fin_stat h3 {font-size: 1.5rem; text-align: center; color: #fff; padding: 15px 0; position: relative;}
+.fin_stat h3::before {content: ""; display: block; position: absolute; left: 50%; top: 55px; width: 50%; height: 4px; background: #f00; transform: translate(-50%);}
+.fin_stat table th,td {border: 1px solid #ccc; font-size: 1rem; padding: 5px 0; height:100%;}
+.fin_stat table th {background: #1c1c1c; color: #fff; text-align: left; width: 25%;}
+.fin_stat table td {width: 25%;}
+.fin_stat table .th1 {font-size: 1.125rem; color: #fff; font-weight: 700;}
+.fin_stat table .th2 {font-weight: 500;}
+.fin_stat table .tit .th1 {background: #C7433C; text-indent: 10px;}
+.fin_stat thead th {background: #666; text-align: center;}
+.fin_stat tbody th {background: #666;}
+.fin_stat tbody td {color: #ccc; font-weight: 500; text-align: center;}
+
+.income_stat {width: 100%; background: #1c1c1c; position: relative; padding-bottom: 44px; display: none;}
+.income_stat span {display: block; width: 90%; margin: 0 5%; text-align: right; color: #999;}
+.income_stat table {width: 90%; margin: 22px 5%; border-collapse: collapse;}
+.income_stat h3 {font-size: 1.5rem; text-align: center; color: #fff; padding: 15px 0; position: relative;}
+.income_stat h3::before {content: ""; display: block; position: absolute; left: 50%; top: 55px; width: 50%; height: 4px; background: #f00; transform: translate(-50%);}
+.income_stat table th,td {border: 1px solid #ccc; font-size: 1rem; padding: 5px 0; height:100%;}
+.income_stat table th {background: #1c1c1c; color: #fff; text-align: left; width: 25%;}
+.income_stat table td {width: 25%;}
+.income_stat table .th1 {font-size: 1.125rem; color: #fff; font-weight: 700;}
+.income_stat table .th2 {font-weight: 500;}
+.income_stat table .tit .th1 {background: #C7433C; text-indent: 10px;}
+.income_stat thead th {background: #666; text-align: center;}
+.income_stat tbody th {background: #666;}
+.income_stat tbody td {color: #ccc; font-weight: 500; text-align: center}

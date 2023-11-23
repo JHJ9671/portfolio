@@ -1,0 +1,58 @@
+.visual { background: url(../images/sub4_visualx2.jpg) center no-repeat; background-size: cover;}
+.sub_menu ul li {float: left; width: 50%;text-align: center; font-size: 1.25rem;}
+/* content */
+
+.tabs {width: 100%; margin: 44px auto 0; overflow: hidden;}
+.tabs .tab {float: left; width: 50%; border-bottom: 10px solid #f00; text-align: center; font-size: 1.1em;}
+.tabs .tab a {padding: 15px 0; transition: all .5s;}
+.tabs .tab.current a{background: #1c1c1c; color: #fff; font-weight: 500;}
+/* result */
+.result {width:100%; background: #1c1c1c; position: relative; padding-bottom: 40px; display: none;}
+.result span {display: block; width: 90%; margin: 22px 5%; text-align: right; color: #999;}
+.result p {color: #999;width: 90%; margin: 10px 5%;}
+.result table {width: 90%; border-collapse: collapse; margin: 0 5%;}
+.result h3 {width: 100%; text-align: center; font-size: 1.5rem; color: #fff; padding: 22px 0; position: relative;}
+.result h3::before {content: ""; display: block; position: absolute; left: 50%; top: 65px; width: 50%; height: 4px; background: #f00; transform: translate(-50%);}
+.result table th,td {border: 1px solid #ccc; text-align: center; font-size: 1rem; padding: 5px;}
+.result table th {background: #1c1c1c; color: #fff;}
+.result thead th:first-child {color: #f00;}
+.result thead th {background: #666;}
+.result tbody th {background: #666;}
+.result tbody td {color: #ccc; font-weight: 500;}
+/* ir */
+.ir {width: 100%; margin: 70px auto;}
+.ir table {width:90%; margin:22px 5%; font-size: 1rem; color: #999; text-align: center;}
+.ir h3 {width: 100%; text-align: center; font-size: 1.5rem; color: #fff; padding: 15px 0; position: relative;}
+.ir h3::before {content: ""; display: block; position: absolute; left: 50%; top: 55px; width: 50%; height: 4px; background: #f00;transform: translate(-50%);}
+.ir table tr {display: flex;}
+.ir table th {width: 40%; text-align: center; font-size: 1rem;}
+.ir table td {width: 30%; display: flex; text-align: center; font-size: 1rem;}
+.ir table td:last-child {display: block;}
+.ir table td a {padding: 5px; display: inline; text-align: center; margin: 0 auto; border: 1px solid #ccc; color: #eee;}
+.ir table td a i {margin: 0 5px;}
+/* stock */
+.stock {width: 100%; background: #1c1c1c; position: relative; padding-bottom: 80px; display: none;}
+.stock table {width: 90%; margin: 22px 5%; font-size: 1rem; color: #999; text-align: center; border-collapse: collapse;}
+.stock h3 {font-size: 1.5rem; color: #fff; padding: 15px 0; text-align: center; position: relative;}
+.stock h3::before {content: ""; display: block; position: absolute; left: 50%; top: 55px; width: 140px; height: 4px; background: #f00; margin-left: -70px;}
+.stock table th {background: #666; border: 1px solid #ccc; color: #eee; text-align: center; font-size: 1rem;}
+.stock table td {border: 1px solid #ccc; color: #eee; text-align: center; font-size: 1rem;}
+.stock p {width: 90%; margin: 22px 5%; color: #999;}
+/* stockholder */
+.stockholder {width: 100%; position: relative;}
+.stockholder h3 {font-size: 1.5rem; color: #fff; padding: 15px 0; text-align: center; position: relative;}
+.stockholder h3::before {content: ""; display: block; position: absolute; left: 50%; top: 55px; width: 140px; height: 4px; background: #f00; margin-left: -70px;}
+.stockholder ul {width: 80%; margin: 0 10%;}
+.stockholder ul li {padding: 5px; color: #eee; font-size: 1.125em; position: relative;}
+.stockholder ul li:nth-of-type(1)::before {content: ""; display: block; position: absolute; left: -16px; top: 13px; width: 12px; height: 12px; border-radius: 50%; background: #FFBA4A;}
+.stockholder ul li:nth-of-type(2)::before {content: ""; display: block; position: absolute; left: -16px; top: 13px; width: 12px; height: 12px; border-radius: 50%; background: #C2FF63;}
+.stockholder ul li:nth-of-type(3)::before {content: ""; display: block; position: absolute; left: -16px; top: 13px; width: 12px; height: 12px; border-radius: 50%; background: #309DFF;}
+.stockholder ul li:nth-of-type(4)::before {content: ""; display: block; position: absolute; left: -16px; top: 13px; width: 12px; height: 12px; border-radius: 50%; background: #D83DFF;}
+.stockholder ul li:nth-of-type(5)::before {content: ""; display: block; position: absolute; left: -16px; top: 13px; width: 12px; height: 12px; border-radius: 50%; background: #FF5E49;}
+.stockholder .chart1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 22px auto;
+    }
+

@@ -1,0 +1,12 @@
+.visual { background: url(../images/sub1_visualx2.jpg) center no-repeat; background-size: cover;}
+.sub_menu ul li {float: left; width: 50%;text-align: center; font-size: 1.25rem;}
+#content .tabs {overflow: hidden; margin: 44px auto 30px; border-bottom: 1px solid #ccc;}
+#content .tabs li {width: 25%; float: left;}
+#content .tabs .tab.current {background: #f00; color: #fff;}
+#content .tab {padding: 10px; text-align: center;color: #333; font-weight: 500; transition: all .5s;}
+#content .map {width: 94%; height: 600px; margin: 0 3% 20px; overflow: hidden;}
+#content .maps {height: 600px;}
+#content .maps #base, #content .maps #gwanghwamun, #content .maps #bundang, #content .maps #junggu {height: 320px; border: 1px solid #ccc;}
+#content section address {font-size: 1em; width: 100%; font-weight: 400; position: relative; left: 50%; top: 0;transform: translate(-50%); text-align: justify;}
+#content section address p {padding: 10px;}
+#content section address p span {font-size: 1.1em; margin: 0 20px 0; font-weight: 500; }

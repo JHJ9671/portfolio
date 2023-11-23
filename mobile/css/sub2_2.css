@@ -1,0 +1,47 @@
+.visual { background: url(../images/sub2_visualx2.jpg) center no-repeat; background-size: cover;}
+.sub_menu ul li {float: left; width: 33.33%;text-align: center; font-size: 1.25rem;}
+/* 사업소개 본문css */
+/* info */
+.info {position: relative; margin: 70px auto; width: 100%; height: 400px; background: url(../images/info.jpg) no-repeat center; background-size: cover;}
+.info h3 {font-size: 1.6em; color: #fff; position: relative; z-index: 10; text-align: center; font-weight: 700; padding-top: 40px;}
+.info h3::before {content: ""; display: block; width: 120px; height: 40px; background: #f00; transform: skew(-30deg) translate(-50%); position: absolute; left: 50%; top: 38px; z-index: -1;}
+.info span {display: block;width: 90%; margin: 110px 5% 0; text-align: justify; line-height: 2em; font-size: 1.25em; color: #fff;}
+.info p {position: absolute; left: 0; top: 0; width: 100%; height: 400px; background: rgba(0, 0, 0, .35);} 
+/* outsourcing */
+.outsourcing {position: relative; margin: 44px 0; width: 100%; background: #1c1c1c;}
+.outsourcing h3 {font-size: 1.6em; color: #fff; position: relative; z-index: 10; text-align: center; font-weight: 700; padding-top: 40px;}
+.outsourcing h3::before {content: ""; display: block; width: 120px; height: 40px; background: #f00; transform: skew(-30deg) translate(-50%); position: absolute; left: 50%; top: 38px; z-index: -1;}
+.outsourcing p {width: 100%; margin: 170px auto 0; text-align: justify; line-height: 2em; font-size: 1.25em; color: #fff;}
+.outsourcing dl {width:100%; height: 250px;color: #fff;text-align: justify; margin: 44px 0 ;}
+.outsourcing dt {font-size: 1.3rem; font-weight: 400; text-align: center; margin-bottom: 22px;}
+.outsourcing dt span {font-size: 1.5rem; color: #f00; font-weight: 500;}
+.outsourcing dd {font-size: 1.125rem; font-weight: 400; margin: 0 5%; line-height: 2em; color: #eee;}
+.outsourcing .swiper-container {
+  width: 100%;
+}
+.outsourcing .swiper-container dl {padding-bottom: 22px;}
+.outsourcing .swiper-container dl dt {position: relative; margin-bottom: 44px; font-size: 1.6rem; font-weight: 700;}
+.outsourcing .swiper-container dl dt::before {content: ""; display: block; position: absolute; left: 50%; top: 50px; transform: translate(-50%); width: 80%; height: 2px; background: #f00;}
+.outsourcing .swiper-container dl dd {width: 80%; margin: 0 10%;}
+.outsourcing .swiper-pagination-bullet {width: 15px; height: 15px; background: #fff;}
+.outsourcing .swiper-container-horizontal>.swiper-pagination-bullets {bottom: 40px;}
+/* core */
+.core {position: relative; width: 100%; height: 620px;background: url(../images/core.jpg) no-repeat center; background-size: cover; margin: 70px 0;}
+.core h3 {font-size: 1.6em; color: #fff; position: relative; z-index: 10; text-align: center; font-weight: 700; padding-top: 40px;}
+.core h3::before {content: ""; display: block; width: 120px; height: 40px; background: #f00; transform: skew(-30deg) translate(-50%); position: absolute; left: 50%; top: 38px; z-index: -1;}
+.core span {display: block;width: 80%; margin: 110px 10% 0; text-align: justify; line-height: 2em; font-size: 1.25em; color: #fff;}
+.core p {position: absolute; left: 0; top: 0; width: 100%; height: 620px; background: rgba(0, 0, 0, .35);} 
+.core_info {position: absolute; left: 0; top: 320px; z-index: 10; width: 100%;}
+.core_info dl {width: 80%; color: #333; background: #fff; height: 320px; margin: 0 10%; box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, .35);}
+.core_info dl dt {position: relative; font-size: 1.6em; font-weight: 700; padding: 30px 0; text-align: center;}
+.core_info dl dt::before {content: ""; display: block; width: 80%; height: 4px; background: #f00; position: absolute; left: 50%; top: 85px; transform: translate(-50%);}
+.core_info dl dd {width: 70%; position: relative; line-height: 2em; text-align: justify; margin: 15px 10%; padding-left: 10%;}
+.core_info dl dd::before {content: ""; display: block; position: absolute; left: 5%; top: 12px; width: 6px; height: 4px; transform: skew(-30deg); background: #f00;}
+.core .swiper-container {
+  width: 100%;
+  padding-bottom: 40px;
+}
+.core .swiper-container-horizontal>.swiper-pagination-bullets {bottom: 40px;}
+.core_info .swiper-button-next, .core_info .swiper-button-prev {--swiper-navigation-size:28px;--swiper-theme-color:#f00}
+.core_info .swiper-button-next {right: 2%;}
+.core_info .swiper-button-prev {left: 2%;}

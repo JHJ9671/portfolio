@@ -1,0 +1,56 @@
+.visual { background: url(../images/sub2_visualx2.jpg) center no-repeat; background-size: cover;}
+.sub_menu ul li {float: left; width: 33.33%;text-align: center; font-size: 1.25rem;}
+/* 사업소개 본문css */
+.tabs {display: flex; width: 100%;margin-top: 44px;}
+.tabs .tab {width: 50%; height: 50px;}
+.tabs .tab a {transition: all .5s; font-size: 1.125em; color: #333; padding: 10px; text-align: center; border: 2px solid #ccc;font-weight: 400;}
+.tabs .tab.current a {color: #fff; font-weight: 500; background: #1c1c1c; border: 2px solid #f00;}
+/* cordless */
+.cordless {width: 100%; background: #1c1c1c; position: relative; }
+.cordless h3 {font-size: 1.4em; color: #fff; position: relative;text-align: center; z-index: 10; padding-top: 44px; font-weight: 700;}
+.cordless h3::before {content: ""; display: block; width: 200px; height: 40px; background: #f00; transform:skew(-30deg) translate(-50%); position: absolute; left: 50%; top: 38px; z-index: -1;}
+.summary {overflow: hidden; margin-bottom: 44px;}
+.summary dl {width: 94%;margin: 44px 3% 0; text-align: justify; color: #fff;}
+.summary dl dt {font-size: 1.3rem; font-weight: 500; margin: 0 0 20px; text-align: center; border-bottom: 2px solid #f00; padding-bottom: 12px;}
+.summary dl dd {font-size: 1.1rem;font-weight: 400; margin: 10px 0; color: #ddd;}
+.summary dl dd:last-of-type {border-bottom: 2px solid #f00; padding-bottom: 20px;}
+.setup dl {height: 420px;text-align: justify; color: #fff; position: relative;}
+.setup dl::before {content: ""; display: block; width: 80%; height: 1px; background: #ccc; position: absolute; left: 50%; top: 95px; transform: translate(-50%);}
+.setup dl dt {font-size: 1.5em; font-weight: 500;text-align: center; padding: 44px 0;}
+.setup dl dd {width: 75%; position: relative; font-size: 1em;font-weight: 400; margin: 8px 10% 0 15%; color: #ddd;}
+.setup dl dd::before {content: ""; display: block; position: absolute; left: -20px; top: 11px; width: 6px; height: 4px; transform: skew(-30deg); background: #f00;}
+.setup .swiper-container {
+    width: 100%;
+  }
+.setup .swiper-pagination-bullet {width: 15px; height: 15px; background: #fff;}
+.use {overflow: hidden; margin-top: 40px;}
+.use dl {color: #fff; margin-top: 15px; text-align: center}
+.use dl dt {font-size: 1.825em; font-weight: 500; margin: 55px 0 40px; position: relative;}
+.use > dl dt::before {content: ""; display: block; width: 80%; height: 1px; background: #ccc; position: absolute; left: 50%; top: 52px; transform: translate(-50%);}
+.use dl dd {font-size: 1.125em;font-weight: 400; margin: 20px 0;}
+.service_sns {display: flex;width: 50%; position: relative; left: 50%; top: 0; transform: translate(-50%);}
+.service_sns li a {color: #fff; font-size: 2em; padding: 15px;}
+.use_time {overflow: hidden; padding: 60px 0;}
+.use_time dl {color: #fff; float: left; width: 80%; text-align:center; margin: 0 10%;}
+.use_time dt {padding: 15px 0 30px; font-size: 1.5em; font-weight: 500; border-bottom: 4px solid #f00; margin: 0 auto;}
+.use_time dd span {margin-right: 15px; font-size: 1.125em; font-weight: 500;}
+.use_time dd {font-size: 1.125em;font-weight: 400; margin: 20px auto 15px;}
+.use_time .swiper-container {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+.use_time .swiper-pagination-bullet {width: 15px; height: 15px; background: #fff;}
+/* cable tab */
+.cable {width: 100%; background: #1c1c1c; position: relative; }
+.cable h3 {font-size: 1.4em; color: #fff; position: relative;text-align: center; z-index: 10; padding-top: 44px; font-weight: 700;}
+.cable h3::before {content: ""; display: block; width: 200px; height: 40px; background: #f00; transform:skew(-30deg) translate(-50%); position: absolute; left: 50%; top: 38px; z-index: -1;}
+.cable > .setup dl {height: 280px; text-align: justify; color: #fff; position: relative;}
+.cable > .setup dl::before {content: ""; display: block; width: 80%; height: 1px; background: #ccc; position: absolute; left: 50%; top: 95px; transform: translate(-50%);}
+.cable > .setup dl dt {font-size: 1.5em; font-weight: 500;text-align: center; padding: 44px 0;}
+.cable > .setup dl dd {width: 75%; position: relative; font-size: 1em;font-weight: 400; margin: 8px 10% 0 15%; color: #ddd;}
+.cable > .setup dl dd::before {content: ""; display: block; position: absolute; left: -20px; top: 11px; width: 6px; height: 4px; transform: skew(-30deg); background: #f00;}
+.cable > .use {margin-top: 0;}
+
+
+
+
