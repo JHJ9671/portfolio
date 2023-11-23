@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+/*  Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul { list-style: none; }
+a { outline:0; display: block; text-decoration:none; color:#fff; }
+img { border:0;}
+body { font:14px/1.5 Noto Sans KR; color:#fff; } 
+.hidden{display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+/*로고*/
+h1 { position:fixed; top:2%; left:5%; z-index:10;}
+h1 a {width: 100px; height: 100px; background: url(../images/logo.png) no-repeat center; background-size: 100% auto; text-indent: -9999px; overflow: hidden;}
+
+/*메뉴*/
+#gnb { position:fixed; top:0; left:50%; z-index:13; transform: translate(-50%); display: flex;}
+#gnb a {display:block; width:200px;padding: 10px 0; font-size:1.1rem; color:#fff; text-align:right; overflow:hidden; box-sizing:border-box;text-align: center; opacity:0.9; transition:all 0.5s; background: #F2A950;}
+#gnb li:hover a {font-size:1.4rem;  opacity:1; background: #0db3d9; border-radius: 0 0 12px 12px;}
+#gnb li.on a {font-size:1.4rem; opacity:1; background: #0db3d9; border-radius: 0 0 12px 12px;}
+/*레이아웃*/
+section {position:relative; width: 100%; overflow:hidden; background: url(../images/back.svg) no-repeat center fixed; background-size: 100% 100%;}
+.profile {width: 90%;padding: 5% 0 0;}
+.profile .pic {width: 40%; float: left; box-sizing: border-box; padding: 8%; top: 50px;}
+.profile .pic img {width: 100%;}
+.profile .info {width: 56%; float: right; margin-left: 4%; margin-top: 6%;}
+.profile .info .name strong{font-size: 4rem;font-style: italic;}
+.profile .info .name span {margin-left: 30px; font-size: 1.2rem;}
+.profile .info ul {display: flex; width: 90%;}
+.profile .info ul li {width: 30%; margin-right: 5%;}
+.profile .info ul li:last-of-type {margin-right: 0;}
+.profile .info ul li a {padding: 10px 0 ; border: 2px solid #fff; box-sizing: border-box; text-indent: 20px; font-size: 1.1rem; font-weight: 500; position: relative; transition: all .5s;}
+.profile .info ul li a span {display: block; width: auto; height: 5px; position: absolute; right: 15px; top: -2px; font-size: 2rem; transition: all 1s ease-in-out; text-align: center; text-indent: 0; padding: 0;}
+.profile .info ul li:hover a{background: #0db3d9;}
+.profile .info dl {margin: 3% 0;}
+.profile .info dt {font-size: 1.3rem; color: #F2A950; font-weight: 500;position: relative;}
+.profile .info dt::after {content: ""; display: block; position: absolute; left: 0; bottom: -4px; width: 200px; height: 2px; background-color: #fff}
+.profile .info dd {overflow: hidden; margin: 5% 0;}
+.profile .info dd p:first-of-type::before {content: ""; display: block; width: 1px; height: 14px; background:#aaa; position: absolute; right: -25px; top: 8px; transform: rotate(10deg);}
+.profile .info dd p:first-of-type {margin-right: 50px;}
+.profile .info dd p {position: relative; float: left; font-size: 1.1rem; font-weight: 500;margin-right: 2%;}
+.profile .info dd ul {display: flex;width: 600px;flex-wrap: wrap;margin-left: -2%;}
+.profile .info dd li {width: 10%; margin: 1%;position: relative; padding: 4%;}
+.profile .info dd li:hover img {transform: scale(0); opacity: 0;}
+.profile .info dd li:hover span {font-size: 1.2rem; opacity: 1;}
+.profile .info dd li img {width: 100%; filter:invert(100); transition: all .5s;}
+.profile .info dd li span {font-size: .7rem; opacity: 0; font-weight: 500; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); transition: all .5s;}
+.profile .info dl:last-of-type dd {margin-top: 2%;}
+/* pc */
+.pc {width: 90%; height: 100%; padding: 13% 0 0; margin: 0 auto;}
+.pc .pc_pic{width: 35%;float: left;box-sizing: border-box; position: relative;}
+.pc .pc_pic img {width: 100%;}
+.pc .pc_pic img:first-of-type {position: relative; z-index: 2;}
+.pc .pc_pic img:last-of-type {position: absolute; left: 4%; top: 4%; width: 92%; z-index: 1;}
+.pc .info {width: 61%; float: right; margin-left: 4%;}
+.pc .info .name strong{font-size: 4rem;font-style: italic;}
+.pc .info .name span {margin-left: 30px; font-size: 1.2rem;}
+.pc .info .name p:nth-of-type(2) {font-size: 1.1rem; color: #eee; margin: 20px 0;}
+.pc .info .name a {width: 200px; padding: 10px 0; font-size: 1.1rem; border: 2px solid #fff; box-sizing: border-box; text-align: center; margin: 30px 0; transition: all .5s;}
+.pc .info .name a:hover {background: #0db3d9;}
+.pc .info ul {display: flex; margin: 30px 0; width: 70%;}
+.pc .info ul li {width: 23%; margin: 0 1%;}
+.pc .info ul li dt {font-size: 1.3rem; font-weight: 500; margin: 10px 0;}
+.pc .info ul li dd {position: relative; text-indent: 15px;}
+.pc .info ul li dd::before {content: ""; display: block; position: absolute; width: 5px; height: 2px; background: #fff; left: 0; top: 10px;}
+.pc .info ul li:last-of-type dd::before {display: none;}
+.pc .info ul li dd ul {display: flex; margin: 15px 0; width: 50%;}
+.pc .info ul li dd li {width: 33.33%;height: 3px;}
+.pc .info ul li dd li:nth-of-type(1){background: #ed2024;}
+.pc .info ul li dd li:nth-of-type(2){background: #1c1c1c;}
+.pc .info ul li dd li:nth-of-type(3){background: #49d3cb;}
+.pc .info > dl dt {font-size: 1.3rem; font-weight: 500;}
+.pc .info > dl dd {margin: 10px 0; text-indent: 15px;position: relative;}
+.pc .info > dl dd::before {content: ""; display: block; position: absolute; width: 5px; height: 2px; background: #fff; left: 0; top: 10px;}
+/* mobile */
+.mobile {width: 90%; height: 100%; padding: 13% 0 0; margin: 0 auto;}
+.mobile .mobile_pic{width: 20%;float: left;box-sizing: border-box; position: relative;margin-left: 8%;top: -5%;}
+.mobile .mobile_pic img {width: 100%;}
+.mobile .mobile_pic img:first-of-type {position: relative; z-index: 2;}
+.mobile .mobile_pic img:last-of-type {position: absolute;left: 7%;top: 17%;width: 86%; z-index: 1;}
+.mobile .info {width: 61%; float: right; position: relative;}
+.mobile .info::after {content: ""; display: block; position: absolute; right: 5%;bottom: 0; width: 150px; height: 150px; background: url(../images/mobile_qr.png) no-repeat center; background-size: 100% 100%;}
+.mobile .info .name strong{font-size: 4rem;font-style: italic;}
+.mobile .info .name span {margin-left: 30px; font-size: 1.2rem;}
+.mobile .info .name p:nth-of-type(2) {font-size: 1.1rem; color: #eee; margin: 20px 0;}
+.mobile .info .name a {width: 250px; padding: 10px 0; font-size: 1.1rem; border: 2px solid #fff; box-sizing: border-box; text-align: center; margin: 30px 0; transition: all .5s;}
+.mobile .info .name a:hover {background: #0db3d9;}
+.mobile .info ul {display: flex; margin: 30px 0; width: 70%;}
+.mobile .info ul li {width: 23%; margin: 0 1%;}
+.mobile .info ul li dt {font-size: 1.3rem; font-weight: 500; margin: 10px 0;}
+.mobile .info ul li dd {position: relative; text-indent: 15px;}
+.mobile .info ul li dd::before {content: ""; display: block; position: absolute; width: 5px; height: 2px; background: #fff; left: 0; top: 10px;}
+.mobile .info ul li:last-of-type dd::before {display: none;}
+.mobile .info ul li dd ul {display: flex; margin: 15px 0; width: 50%;}
+.mobile .info ul li dd li {width: 33.33%;height: 3px;}
+.mobile .info ul li dd li:nth-of-type(1){background: #ed2024;}
+.mobile .info ul li dd li:nth-of-type(2){background: #1c1c1c;}
+.mobile .info ul li dd li:nth-of-type(3){background: #49d3cb;}
+.mobile .info > dl dt {font-size: 1.3rem; font-weight: 500;}
+.mobile .info > dl dd {margin: 10px 0; text-indent: 15px;position: relative;}
+.mobile .info > dl dd::before {content: ""; display: block; position: absolute; width: 5px; height: 2px; background: #fff; left: 0; top: 10px;}
+/* responsive */
+.responsive {width: 90%; height: 100%; padding: 13% 0 0; margin: 0 auto; position: relative;}
+.responsive .responsive_pic{width: 35%;float: left;box-sizing: border-box; position: relative; top: 50px;}
+.responsive .responsive_pic::before {content: ""; display: block; width: 150px; height: 250px; background: url(../images/rp_tablet.png)no-repeat center; background-size: 100% 100%; position: absolute; left: -30px; bottom: 0; z-index: 5;}
+.responsive .responsive_pic::after {content: ""; display: block; width: 120px; height: 200px; background: url(../images/rp_mobile.png)no-repeat center; background-size: 100% 100%; position: absolute; left: 130px; bottom: 0; z-index: 6;}
+.responsive .responsive_pic img {width: 100%;}
+.responsive .responsive_pic img:first-of-type {position: relative; z-index: 2;}
+.responsive .responsive_pic img:last-of-type {position: absolute; left: 4%; top: 4%; width: 92%; height: 66%; z-index: 1;}
+.responsive .responsive_pic .rp_tb {width: 400px; height: 700px; position: absolute; left: 0; top: 0;}
+.responsive .responsive_pic .rp_mob {width: 400px; height: 700px; position: absolute; left: 0; top: 0;}
+.responsive .info {width: 61%; float: right; position: relative;}
+.responsive .info::after {content: ""; display: block; position: absolute; right: 5%;bottom: 0; width: 150px; height: 150px; background: url(../images/responsive_qr.png) no-repeat center; background-size: 100% 100%;}
+.responsive .info .name strong{font-size: 4rem;font-style: italic;}
+.responsive .info .name span {margin-left: 30px; font-size: 1.2rem;}
+.responsive .info .name p:nth-of-type(2) {font-size: 1.1rem; color: #eee; margin: 20px 0;}
+.responsive .info .name a {width: 250px; padding: 10px 0; font-size: 1.1rem; border: 2px solid #fff; box-sizing: border-box; text-align: center; margin: 30px 0; transition: all .5s;}
+.responsive .info .name a:hover {background: #0db3d9;}
+.responsive .info ul {display: flex; margin: 30px 0; width: 70%;}
+.responsive .info ul li {width: 23%; margin: 0 1%;}
+.responsive .info ul li dt {font-size: 1.3rem; font-weight: 500; margin: 10px 0;}
+.responsive .info ul li dd {position: relative; text-indent: 15px;}
+.responsive .info ul li dd::before {content: ""; display: block; position: absolute; width: 5px; height: 2px; background: #fff; left: 0; top: 10px;}
+.responsive .info ul li:last-of-type dd::before {display: none;}
+.responsive .info ul li dd ul {display: flex; margin: 15px 0; width: 50%;}
+.responsive .info ul li dd li {width: 33.33%;height: 3px;}
+.responsive .info ul li dd li:nth-of-type(1){background: #050626;}
+.responsive .info ul li dd li:nth-of-type(2){background: #3DBFF2;}
+.responsive .info ul li dd li:nth-of-type(3){background: #ef519e;}
+.responsive .info > dl dt {font-size: 1.3rem; font-weight: 500;}
+.responsive .info > dl dd {margin: 10px 0; text-indent: 15px;position: relative;}
+.responsive .info > dl dd::before {content: ""; display: block; position: absolute; width: 5px; height: 2px; background: #fff; left: 0; top: 10px;}
